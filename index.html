@@ -19,25 +19,25 @@
         <div class="rectangle">
             
             
-            <div>
+            <div class="inline">
                 <h1>7</h1>
                 <p>Branch</p>
             </div>
             
-            <div>
+            <div class="inline">
                  <h1>88</h1>
                 <p>Events</p>
             </div>
             
-            <div>
+            <div class="inline">
                 <h1>24</h1>
                 <p>Workshops</p>
             </div>
-            <div>
+            <div class="inline">
                 <h1>6000+</h1>
              <p>Attendees</p>
             </div>
-            <div>
+            <div class="inline">
                 <h1>34</h1>
                 <p>Sponsors</p>
             </div>
@@ -48,8 +48,11 @@
         
         <h1 style="padding-top: 20px;">section box3</h1>
         <!--box 3-->
-        <div>
-            
+        <div class="content2">
+                <iframe class="frame" src="https://www.youtube.com/embed/EN1toVBWwJM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h2>
+                    Dhishna has its origin from Xplendor, the annual tech-fest of SOE, CUSAT held in 2010. From technical workshops to techniques, from hackathons to musical nights, Xplendor touched all spheres of a student’s life. Although the first of its kind, it opened gateways for students to showcase their technical skills and talents
+            </h2>
         </div>
     </body>
 
@@ -78,13 +81,59 @@ background: linear-gradient(138deg, rgba(144,61,142,1) 0%, rgba(219,99,130,1) 10
         {
             display: flex;
             justify-content: space-around;
-            width: 35%;
+            width: auto;
             border-color: rgba(219,99,130,1);
             border-style: dashed;
             border-radius: 15px;
             color: rgb(209, 107, 133);
             font-family: 'Montserrat', sans-serif;
         }
+        .inline p
+        {
+            
+            align-content: center;
+            align-items: center;  
+        }.inline h1
+        {
+            
+            transform: translateX();
+            
+            
+        }
+        .inline{
+           
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .content2
+        {
+        background: rgb(144,61,142);
+        justify-content: space-around;
+        margin: 30px;
+         background: linear-gradient(138deg, rgba(144,61,142,1) 0%, rgba(219,99,130,1) 100%);
+         display: flex;
+         padding:50px;
+         font-family: 'Montserrat', sans-serif;
+         border-radius: 10px;
+         color: white;
+         box-shadow: 11px 20px 7px 0 rgba(0,0,0,0.2);
+        }
+        .content2 h2
+        {
+            padding: 10px;
+            width: 40%;
+        }
+        .frame
+        {
+            width: 50%;
+            height: 315px; 
+            border-radius: 10px;
+            box-shadow: 11px 20px 7px 0 rgba(0,0,0,0.2);
+
+        }
+
     </style>
 
 </html>
